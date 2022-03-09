@@ -27,7 +27,7 @@ jobs:
           
       # publishes Blazor project to the release-folder
       - name: Publish .NET Core Project
-        run: dotnet publish BlazorWasmEFCore/BlazorWasmMultipartBundle.csproj -c Release -o dist/BlazorWasmMultipartBundle --nologo
+        run: dotnet publish BlazorWasmMultipartBundle/BlazorWasmMultipartBundle.csproj -c Release -o dist/BlazorWasmMultipartBundle --nologo
         
       # change base tag in all html files to include subfolder
       - name: Change base tag
